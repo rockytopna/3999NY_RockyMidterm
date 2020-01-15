@@ -23,5 +23,6 @@ public class FindMissingNumber {
             sum = sum - array[i];
         }
         System.out.println("Missing Number is : " + sum);
+
     }
 }
