@@ -16,17 +16,18 @@ public class Palindrome {
 
 
     }
+
     public static void isPalindrom(String a) {
 
         boolean status = true;
         char[] word = a.toLowerCase().toCharArray();
 
-        int i1= 0;
-        int i2= word.length - 1;
+        int i1 = 0;
+        int i2 = word.length - 1;
 
-        while (i2>i1){
+        while (i2 > i1) {
 
-            if (word[i1] !=word[i2]){
+            if (word[i1] != word[i2]) {
                 status = false;
 
 
