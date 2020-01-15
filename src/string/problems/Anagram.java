@@ -1,5 +1,7 @@
 package string.problems;
 
+import jdk.swing.interop.SwingInterOpUtils;
+
 import java.util.Arrays;
 
 /**
@@ -12,6 +14,8 @@ public class Anagram {
         //same character but in different order.For example,"CAT" and "ACT", "ARMY" and "MARY".
         areAnagram("CAT", "ACT");
         areAnagram("ARMY", "MARY");
+        System.out.println( "Check if they are Anagram" + " " + areAnagram("CAT", "ACT"));
+
 
 
 
