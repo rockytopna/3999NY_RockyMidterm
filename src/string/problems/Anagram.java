@@ -14,17 +14,14 @@ public class Anagram {
         //same character but in different order.For example,"CAT" and "ACT", "ARMY" and "MARY".
         areAnagram("CAT", "ACT");
         areAnagram("ARMY", "MARY");
-        System.out.println( "Check if they are Anagram" + " " + areAnagram("CAP", "ACT"));
-
-
-
+        System.out.println("Check if they are Anagram" + " " + areAnagram("CAP", "ACT"));
 
 
     }
 
     public static boolean areAnagram(String word1, String word2) {
 
-        if (word1.length()!= word2.length()){
+        if (word1.length() != word2.length()) {
             return false;
 
         }

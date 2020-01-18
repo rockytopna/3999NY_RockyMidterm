@@ -29,8 +29,9 @@ public class PrimeNumber {
         }
         System.out.println("total number of prime numbers" + counter);
     }
+
     //}
-    public static boolean isPrime ( int number){
+    public static boolean isPrime(int number) {
         if (number % 2 == 0) {
             return false;
         }

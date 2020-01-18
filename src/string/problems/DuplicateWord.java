@@ -17,30 +17,29 @@ public class DuplicateWord {
         String st = "Java is a programming Language. Java is also an Island of Indonesia. Java is widely used language";
 
 
-
         st = st.toLowerCase();
-        HashMap<String,Integer> counter = new HashMap<>();
-        for (String word: st.split(" ")){
+        HashMap<String, Integer> counter = new HashMap<>();
+        for (String word : st.split(" ")) {
 
             int i = counter.getOrDefault(word, 0);
-            counter.put(word,i + 1);
+            counter.put(word, i + 1);
 
         }
 
         ArrayList<Integer> lengths = new ArrayList<>();
         System.out.println("Duplicate words and occources ");
-        for (String key : counter.keySet()){
+        for (String key : counter.keySet()) {
 
             lengths.add(key.length());
-            if (counter.get(key)>1);
+            if (counter.get(key) > 1) ;
             System.out.println(key + " " + counter.get(key));
 
         }
 
         Integer sum = 0;
-        for (Integer length : lengths){
+        for (Integer length : lengths) {
 
-            sum  = length;
+            sum = length;
 
         }
 
