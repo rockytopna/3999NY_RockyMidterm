@@ -1,8 +1,13 @@
 package datastructure;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
 public class DataReader {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		/*
 		 * User API to read the below textFile and print to console.
 		 * Use BufferedReader class. 
@@ -18,10 +23,33 @@ public class DataReader {
 		 * Use For Each loop/while loop/Iterator to retrieve data.
 		 */
 
-		String textFile = System.getProperty("user.dir") + "/src/data/self-driving-car.txt";
+		FileReader fileReader = null;
+		BufferedReader bufferedReader = null;
+		try {
+			String fileName = "/Users/rockytopna/Documents/Midterm/MidtermJuly2019/src/data/self-driving-car";
+			fileReader = new FileReader(fileName);
+			bufferedReader = new BufferedReader(fileReader);
 
-
+			String data = "";
+			while ((data = bufferedReader.readLine()) != null) {
+				System.out.println(data);
+			}
+		} catch (FileNotFoundException ex) {
+			ex.printStackTrace();
+			System.out.println("Invalid file name, please enter a valid file");
+		} catch (IOException ex) {
+			ex.printStackTrace();
+			System.out.println("IO error");
+		} finally {
+			bufferedReader.close();
+			fileReader.close();
+		}
 
 	}
-
 }
+
+
+
+
+
+
