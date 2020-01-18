@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="584f81b2-31cb-4576-bc72-6d673ff767f2" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/datastructure/DataReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datastructure/DataReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/math/problems/Fibonacci.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/problems/Fibonacci.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/math/problems/UnitTestingMath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/problems/UnitTestingMath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design/EmployeeInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/design/EmployeeInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design/FortuneEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/design/FortuneEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design/UnitTestingEmployeeInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/design/UnitTestingEmployeeInfo.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +48,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DataReader">
+  <component name="RunManager" selected="TestNG.UnitTestingEmployeeInfo">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -69,13 +69,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Factorial" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="math.problems.Factorial" />
+    <configuration name="Numbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="algorithm.Numbers" />
       <module name="CodingExamJuly2019" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="math.problems.*" />
+          <option name="PATTERN" value="algorithm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,16 +96,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UnitTestingMath" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="UnitTestSorting.testBubbleSort" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="CodingExamJuly2019" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="math.problems.*" />
+          <option name="PATTERN" value="algorithm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="math.problems" />
-      <option name="MAIN_CLASS_NAME" value="math.problems.UnitTestingMath" />
+      <option name="PACKAGE_NAME" value="algorithm" />
+      <option name="MAIN_CLASS_NAME" value="algorithm.UnitTestSorting" />
+      <option name="METHOD_NAME" value="testBubbleSort" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UnitTestingEmployeeInfo" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="CodingExamJuly2019" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="design.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="design" />
+      <option name="MAIN_CLASS_NAME" value="design.UnitTestingEmployeeInfo" />
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <properties />
@@ -133,25 +152,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UnitTestingMath.testPositiveFactorial" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="CodingExamJuly2019" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="math.problems.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="math.problems" />
-      <option name="MAIN_CLASS_NAME" value="math.problems.UnitTestingMath" />
-      <option name="METHOD_NAME" value="testPositiveFactorial" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -162,19 +162,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Factorial" />
-      <item itemvalue="TestNG.UnitTestingMath" />
-      <item itemvalue="TestNG.UnitTestingMath.testPositiveFactorial" />
       <item itemvalue="TestNG.UnitTestingMath.testNegativeFactorial" />
       <item itemvalue="Application.DataReader" />
+      <item itemvalue="Application.Numbers" />
+      <item itemvalue="TestNG.UnitTestSorting.testBubbleSort" />
+      <item itemvalue="TestNG.UnitTestingEmployeeInfo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.UnitTestingEmployeeInfo" />
+        <item itemvalue="TestNG.UnitTestSorting.testBubbleSort" />
+        <item itemvalue="Application.Numbers" />
         <item itemvalue="Application.DataReader" />
         <item itemvalue="TestNG.UnitTestingMath.testNegativeFactorial" />
-        <item itemvalue="TestNG.UnitTestingMath.testPositiveFactorial" />
-        <item itemvalue="TestNG.UnitTestingMath" />
-        <item itemvalue="Application.Factorial" />
       </list>
     </recent_temporary>
   </component>
