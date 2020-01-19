@@ -38,7 +38,7 @@ public class ConnectToMongoDB {
         return profile + " has been registered";
     }
 
-    public String insertIntoMongoDB(List<Student> student,String profileName){
+    public static String insertIntoMongoDB(List<Student> student, String profileName){
         MongoDatabase mongoDatabase = connectToMongoDB();
         MongoCollection myCollection = mongoDatabase.getCollection(profileName);
         boolean collectionExists = mongoDatabase.listCollectionNames()
@@ -75,7 +75,7 @@ public class ConnectToMongoDB {
         return list;
     }
 
-    public List<Student> readStudentListFromMongoDB(String profileName){
+    public static List<Student> readStudentListFromMongoDB(String profileName){
         List<Student> list = new ArrayList<Student>();
         Student student = new Student();
         MongoDatabase mongoDatabase = connectToMongoDB();
